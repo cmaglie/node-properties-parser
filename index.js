@@ -51,7 +51,7 @@ function startsKeyVal(chr) {
 	return !isWhitespace(chr) && !startsComment(chr);
 }
 function startsSeparator(chr) {
-	return chr === "=" || chr === ":" || isWhitespace(chr);
+	return chr === "=";
 }
 function startsEscapedVal(chr) {
 	return chr === "\\";
